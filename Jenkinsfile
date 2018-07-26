@@ -6,6 +6,7 @@ pipeline {
       ORG               = 'wmcdona89'
       APP_NAME          = 'spring-boot-web'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+      AWS_REGION = 'us-east-1'
     }
     stages {
       stage('CI Build and push snapshot') {
